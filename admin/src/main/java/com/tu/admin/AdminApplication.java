@@ -19,7 +19,6 @@ import org.springframework.context.annotation.Configuration;
  * @EnableEurekaClient 加入eureka中
  *
  */
-
 @EnableDiscoveryClient
 @EnableEurekaClient
 @EnableAdminServer
