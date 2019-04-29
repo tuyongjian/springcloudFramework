@@ -20,6 +20,7 @@ import org.springframework.context.annotation.Configuration;
  *
  */
 
+@EnableDiscoveryClient
 @EnableEurekaClient
 @EnableAdminServer
 @SpringBootApplication(exclude = {DataSourceAutoConfiguration.class})
