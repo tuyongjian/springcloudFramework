@@ -20,7 +20,7 @@ import org.springframework.web.client.RestTemplate;
 @SpringBootApplication(exclude = {DataSourceAutoConfiguration.class})
 @EnableEurekaClient
 @EnableDiscoveryClient
-@RibbonClient(name = "Ribbon-Server",configuration = RibbonConfig.class)
+//@RibbonClient(name = "Ribbon-Server",configuration = RibbonConfig.class)
 public class RibbonApplication {
 
     public static void main(String[] args) {
