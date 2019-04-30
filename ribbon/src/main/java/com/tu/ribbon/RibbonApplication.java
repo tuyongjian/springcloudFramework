@@ -1,11 +1,13 @@
 package com.tu.ribbon;
 
+import com.tu.ribbon.config.RibbonConfig;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+import org.springframework.cloud.netflix.ribbon.RibbonClient;
 import org.springframework.context.annotation.Bean;
 import org.springframework.web.client.RestTemplate;
 
@@ -18,6 +20,7 @@ import org.springframework.web.client.RestTemplate;
 @SpringBootApplication(exclude = {DataSourceAutoConfiguration.class})
 @EnableEurekaClient
 @EnableDiscoveryClient
+@RibbonClient(name = "Ribbon-Server",configuration = RibbonConfig.class)
 public class RibbonApplication {
 
     public static void main(String[] args) {

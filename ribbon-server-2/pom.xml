@@ -9,11 +9,11 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.tu.ribbon</groupId>
-    <artifactId>ribbon</artifactId>
+    <groupId>com.tu.ribbon-server-2</groupId>
+    <artifactId>ribbon-server-2</artifactId>
     <packaging>jar</packaging>
 
-    <name>ribbon</name>
+    <name>ribbon-server-2</name>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
@@ -25,16 +25,9 @@
             <version>4.11</version>
             <scope>test</scope>
         </dependency>
-
-        <!--引入ribbon jar -->
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-ribbon</artifactId>
-        </dependency>
-
     </dependencies>
 
     <build>
-        <finalName>ribbon</finalName>
+        <finalName>ribbon-server-2</finalName>
     </build>
 </project>
