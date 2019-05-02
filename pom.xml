@@ -16,7 +16,7 @@
     <module>eureka</module>
     <module>admin</module>
     <module>webapp</module>
-    <module>eureka1</module>
+    <module>eureka</module>
     <module>ribbon</module>
     <module>ribbon-server-1</module>
     <module>ribbon-server-2</module>
