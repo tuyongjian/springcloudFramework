@@ -13,7 +13,6 @@
 
   <!--子模块集合-->
   <modules>
-    <module>eureka</module>
     <module>admin</module>
     <module>webapp</module>
     <module>eureka</module>
