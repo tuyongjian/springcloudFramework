@@ -16,6 +16,9 @@ import org.springframework.web.client.RestTemplate;
  * @Classname RibbonApplication
  * @Date 2019/4/30 15:01
  * @Created by tuyongjian
+ *
+ * EnableDiscoveryClient 这个注解让应用注册为eureka客户端应用
+ * 让其获得服务发现的能力
  */
 @SpringBootApplication(exclude = {DataSourceAutoConfiguration.class})
 @EnableEurekaClient
