@@ -20,6 +20,7 @@
     <module>ribbon</module>
     <module>ribbon-server-1</module>
     <module>ribbon-server-2</module>
+      <module>hystrix</module>
   </modules>
 
 
