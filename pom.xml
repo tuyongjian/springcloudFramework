@@ -89,6 +89,7 @@
       <artifactId>spring-boot-starter-thymeleaf</artifactId>
     </dependency>
 
+    <!--健康探测的jar-->
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-actuator</artifactId>
@@ -146,6 +147,23 @@
       <groupId>de.codecentric</groupId>
       <artifactId>spring-boot-admin-starter-client</artifactId>
       <version>${springboot-admin.version}</version>
+    </dependency>
+
+    <!--引入hystrix jar-->
+    <dependency>
+      <groupId>org.springframework.cloud</groupId>
+      <artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
+    </dependency>
+
+    <!--引入ribbon jar -->
+    <dependency>
+      <groupId>org.springframework.cloud</groupId>
+      <artifactId>spring-cloud-starter-netflix-ribbon</artifactId>
+    </dependency>
+    <!--引入fegin jar 这个jar 命名方式和其他的有区别，有点小坑-->
+    <dependency>
+      <groupId>org.springframework.cloud</groupId>
+      <artifactId>spring-cloud-starter-openfeign</artifactId>
     </dependency>
 
   </dependencies>
