@@ -3,6 +3,7 @@ package com.tu.hystrix.service;
 import com.netflix.hystrix.contrib.javanica.annotation.DefaultProperties;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import com.netflix.hystrix.contrib.javanica.annotation.ObservableExecutionMode;
+import com.netflix.hystrix.contrib.javanica.cache.annotation.CacheResult;
 import com.netflix.hystrix.contrib.javanica.command.AsyncResult;
 import com.tu.common.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -90,7 +91,17 @@ public class HystrixService {
     }
 
 
-    @HystrixCommand(fallbackMethod = "fallback")
+    /***
+     * ignoreExceptions = {IndexOutOfBoundsException.class} 忽略这个异常
+     * 当调用Server方法是如果发生上面这个异常，则不会进入服务降级fallback方法
+     *
+     * groupKey 分组，threadPoolKey 线程组，commandKey 命名名称
+     *
+     * @return
+     */
+    @CacheResult
+    @HystrixCommand(fallbackMethod = "fallback",ignoreExceptions = {IndexOutOfBoundsException.class},
+            commandKey = "getPort",groupKey = "UserGroup",threadPoolKey = "getPortThread")
     public String getPort(){
         return restTemplate.getForObject("http://SERVER/server/port",String.class);
     }
