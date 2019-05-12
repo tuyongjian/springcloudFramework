@@ -5,6 +5,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.hystrix.dashboard.EnableHystrixDashboard;
 
 /**
+ *
+ * 这个模块作为独立工程，使用
+ *
  * Created by tuyongjian on 2018/8/12.
  * hystrixdashboard 启动类
  * @EnableHystrixDashboard 启动仪盘功能
