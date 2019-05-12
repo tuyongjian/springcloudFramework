@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RequestParam;
  *
  * fallback = FeignFallBack.class 指定服务降级的类，当调用的远程接口不可用时，会返回服务降级的内容
  */
-@FeignClient(value = "Ribbon-Server",fallback = FeignFallBack.class)
+@FeignClient(value = "Server",fallback = FeignFallBack.class)
 public interface FeignService {
 
     /***

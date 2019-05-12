@@ -18,8 +18,8 @@
     <module>eureka</module>
 	<module>eureka1</module>
     <module>ribbon</module>
-    <module>ribbon-server-1</module>
-    <module>ribbon-server-2</module>
+    <module>server-1</module>
+    <module>server-2</module>
     <module>hystrix</module>
     <module>feign</module>
   </modules>

@@ -9,11 +9,11 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.tu.ribbon-server-1</groupId>
-    <artifactId>ribbon-server-1</artifactId>
+    <groupId>com.tu.server-1</groupId>
+    <artifactId>server-1</artifactId>
     <packaging>jar</packaging>
 
-    <name>ribbon-server-1</name>
+    <name>server-1</name>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
@@ -28,6 +28,6 @@
     </dependencies>
 
     <build>
-        <finalName>ribbon-server-1</finalName>
+        <finalName>server-1</finalName>
     </build>
 </project>

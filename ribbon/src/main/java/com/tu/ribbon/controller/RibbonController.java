@@ -24,6 +24,6 @@ public class RibbonController {
      */
     @RequestMapping(value = "test",method = RequestMethod.GET)
     private String test(){
-        return restTemplate.getForObject("http://RIBBON-SERVER/ribbon/port",String.class);
+        return restTemplate.getForObject("http://Server/ribbon/port",String.class);
     }
 }
