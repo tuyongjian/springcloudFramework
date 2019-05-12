@@ -1,5 +1,6 @@
 package com.tu.server.controller;
 
+import com.tu.common.model.User;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -24,5 +25,13 @@ public class ServerController {
     @RequestMapping(value = "getName",method = RequestMethod.GET)
     private String getName(@RequestParam(value = "name")String name){
         return "my name is "+name;
+    }
+
+    @RequestMapping(value = "getUser",method = RequestMethod.GET)
+    private User getUser(){
+        User user = new User();
+        user.setAge(27);
+        user.setUserName("tuyongjian");
+        return user;
     }
 }
