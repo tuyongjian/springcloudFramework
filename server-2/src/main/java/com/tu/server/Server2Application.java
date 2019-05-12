@@ -1,4 +1,4 @@
-package com.tu.ribbon.server;
+package com.tu.server;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -15,9 +15,9 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 @SpringBootApplication(exclude = {DataSourceAutoConfiguration.class})
 @EnableDiscoveryClient
 @EnableEurekaClient
-public class RibbonServer2Application {
+public class Server2Application {
 
     public static void main(String[] args) {
-        SpringApplication.run(RibbonServer2Application.class,args);
+        SpringApplication.run(Server2Application.class,args);
     }
 }

@@ -26,13 +26,13 @@ public class HystrixService {
 
     @HystrixCommand
     public String testDefaultFallback(){
-        return restTemplate.getForObject("http://SERVER/ribbon/port",String.class);
+        return restTemplate.getForObject("http://SERVER/server/port",String.class);
     }
 
 
     @HystrixCommand(fallbackMethod = "fallback")
     public String test(){
-        return restTemplate.getForObject("http://SERVER/ribbon/port",String.class);
+        return restTemplate.getForObject("http://SERVER/server/port",String.class);
     }
 
 

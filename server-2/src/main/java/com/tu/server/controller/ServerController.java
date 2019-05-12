@@ -1,4 +1,4 @@
-package com.tu.ribbon.server.controller;
+package com.tu.server.controller;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -12,8 +12,8 @@ import org.springframework.web.bind.annotation.RestController;
  * @Created by tuyongjian
  */
 @RestController
-@RequestMapping(value = "/ribbon")
-public class RibbonServerController {
+@RequestMapping(value = "/server")
+public class ServerController {
 
     @RequestMapping(value = "port",method = RequestMethod.GET)
     private String getPort(){

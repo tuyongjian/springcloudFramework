@@ -21,14 +21,14 @@ import org.springframework.web.bind.annotation.RequestParam;
 public interface FeignService {
 
     /***
-     *  ribbon/port ribbon/getName 等都是ribbon-server 模块中提供的接口名字
+     *  server/port server/getName 等都是ribbon-server 模块中提供的接口名字
      * @return
      */
 
-     @RequestMapping(value = "/ribbon/port",method = RequestMethod.GET)
+     @RequestMapping(value = "/server/port",method = RequestMethod.GET)
      String getPort();
 
-     @RequestMapping(value = "/ribbon/getName",method = RequestMethod.GET)
+     @RequestMapping(value = "/server/getName",method = RequestMethod.GET)
      String getName(@RequestParam(value = "name")String name);
 
 
