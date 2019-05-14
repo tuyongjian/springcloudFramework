@@ -23,6 +23,7 @@
     <module>hystrix</module>
     <module>feign</module>
     <module>common</module>
+    <module>zuul</module>
   </modules>
 
 
