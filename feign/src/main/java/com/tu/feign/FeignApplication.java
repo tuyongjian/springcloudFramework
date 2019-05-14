@@ -3,6 +3,7 @@ package com.tu.feign;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
+import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.cloud.openfeign.EnableFeignClients;
@@ -16,9 +17,13 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
  * fegin 整合了ribbon 和 hystrix 具有这二个模块的功能
  * 例如，客户端的负载均衡，熔断，服务降级等
  *
+ * EnableCircuitBreaker这个开启之后，hystrix-dashboard 就会监控到feign服务，不然，获取不到feign的服务
+ *
  * @EnableFeignClients 开启fegin
+ *
  */
 @EnableFeignClients
+@EnableCircuitBreaker
 @EnableEurekaClient
 @EnableDiscoveryClient
 @SpringBootApplication(exclude = {DataSourceAutoConfiguration.class})

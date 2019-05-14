@@ -14,6 +14,7 @@ import org.springframework.cloud.netflix.turbine.EnableTurbine;
  * @EnableHystrixDashboard 启动仪盘功能
  *
  * http://localhost:1115/actuator/hystrix.stream 这样可以监听一个单体服务
+ * http://localhost:1117/turbine.stream 集成turbine之后，通过这个就可以访问指定的集群的
  *
  */
 @SpringBootApplication
