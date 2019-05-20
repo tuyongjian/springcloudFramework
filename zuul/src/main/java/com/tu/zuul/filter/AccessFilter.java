@@ -13,6 +13,8 @@ import javax.servlet.http.HttpServletRequest;
  * @Classname AccessFilter
  * @Date 2019/5/15 11:38
  * @Created by tuyongjian
+ * 过滤器是zuul的核心功能。
+ *
  */
 public class AccessFilter extends ZuulFilter {
 
@@ -21,6 +23,9 @@ public class AccessFilter extends ZuulFilter {
     /**
      * 过滤器的类型，决定过滤器在请求的那个生命周期中执行，
      * pre 代表在请求被路由之前执行
+     * routing 在路由请求时被调用
+     * error 处理请求发生错误的时候被调用
+     * post  在routing和error过滤器之后被调用
      * @return
      */
     @Override
@@ -29,7 +34,7 @@ public class AccessFilter extends ZuulFilter {
     }
 
     /**
-     * 过滤器的执行顺序，
+     * 过滤器的执行顺序，数值越小优先级越高
      * @return
      */
     @Override
