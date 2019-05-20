@@ -18,22 +18,37 @@ public class AccessFilter extends ZuulFilter {
 
     private Logger logger = LoggerFactory.getLogger(AccessFilter.class);
 
+    /**
+     * 过滤器的类型，决定过滤器在请求的那个生命周期中执行，
+     * pre 代表在请求被路由之前执行
+     * @return
+     */
     @Override
     public String filterType() {
         return "pre";
     }
 
+    /**
+     * 过滤器的执行顺序，
+     * @return
+     */
     @Override
     public int filterOrder() {
         return 0;
     }
 
+    /**
+     * 判断过滤去是否要被执行，这里直接返回true,因此该过滤器对所有的请求都会生效
+     *
+     * @return
+     */
     @Override
     public boolean shouldFilter() {
         return true;
     }
 
     /***
+     * 过滤器的具体逻辑
      * 自定义的规则，如果请求中没有accessToken参数并且为空的话，返回401
      * @return
      * @throws ZuulException
