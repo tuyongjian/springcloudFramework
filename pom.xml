@@ -24,6 +24,7 @@
     <module>feign</module>
     <module>common</module>
     <module>zuul</module>
+    <module>configServer</module>
   </modules>
 
 
