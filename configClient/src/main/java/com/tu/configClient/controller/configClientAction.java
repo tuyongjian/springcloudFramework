@@ -11,6 +11,11 @@ import org.springframework.web.bind.annotation.RestController;
  * @Classname configClientAction
  * @Date 2019/5/29 10:33
  * @Created by tuyongjian
+ *
+ * 重新启动客户端，会重新获取远程的配置文件，同时也会刷新本地缓存的文件内容
+ * 如果不重新启动，修改了配置文件 则获取的还是老的配置
+ * 可以使用http://localhost:1120/actuator/refresh来手动刷新
+ *
  */
 @RefreshScope
 @RestController

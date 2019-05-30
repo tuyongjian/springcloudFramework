@@ -12,7 +12,8 @@ import org.springframework.cloud.config.server.EnableConfigServer;
  *
  * 在 git上面有一个配置中心，tu是其中一个配置的文件的一个属性，，dev是文件名的环境，访问以下路径可以查看
  * 配置中心内容
- * http://localhost:1119/tu/dev
+ * http://localhost:1119/tu/dev 访问会把本地的文件刷新和远程的一样，在首次启动服务的时候，
+ * 会把远程的配置文件拉取一份存放在本地
  *
  */
 @SpringBootApplication(exclude = {DataSourceAutoConfiguration.class})
