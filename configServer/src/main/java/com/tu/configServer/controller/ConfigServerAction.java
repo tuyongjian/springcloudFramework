@@ -10,6 +10,11 @@ import org.springframework.web.bind.annotation.RestController;
  * @Classname ConfigServerAction
  * @Date 2019/5/29 9:50
  * @Created by tuyongjian
+ *
+ *
+ * 如果使用bus总线可以使用 http://localhost:1119/actuator/bus-refresh 来刷新配置
+ * 这样所有的客户端都会刷新。
+ *
  */
 @RestController
 @RequestMapping(value = "configServer")
