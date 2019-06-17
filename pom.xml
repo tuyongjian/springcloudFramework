@@ -13,6 +13,7 @@
 
   <!--子模块集合-->
   <modules>
+    <module>common</module>
     <module>admin</module>
     <module>webapp</module>
     <module>eureka</module>
@@ -22,10 +23,9 @@
     <module>server-2</module>
     <module>hystrix</module>
     <module>feign</module>
-    <module>common</module>
     <module>zuul</module>
     <module>configServer</module>
-      <module>configClient</module>
+    <module>configClient</module>
   </modules>
 
 

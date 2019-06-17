@@ -11,12 +11,18 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.tu.common</groupId>
     <artifactId>common</artifactId>
-    <packaging>jae</packaging>
+    <packaging>jar</packaging>
 
     <build>
         <finalName>common</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <classifier>exec</classifier>
+                </configuration>
+            </plugin>
+        </plugins>
     </build>
-
-
-
 </project>

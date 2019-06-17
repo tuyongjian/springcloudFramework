@@ -64,4 +64,8 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+
+    <build>
+        <finalName>admin</finalName>
+    </build>
 </project>
