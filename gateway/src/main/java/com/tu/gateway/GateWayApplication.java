@@ -11,7 +11,8 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
  * @Description: springcloud 提供的新的网关服务
  *
  * gateway
- *
+ * 参考网址 https://www.cnblogs.com/qianwei/p/10127700.html
+ * https://www.cnblogs.com/crazymakercircle/p/11704077.html
  */
 @SpringBootApplication(exclude = {DataSourceAutoConfiguration.class})
 @EnableDiscoveryClient
