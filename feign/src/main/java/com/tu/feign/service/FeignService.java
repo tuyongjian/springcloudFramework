@@ -25,10 +25,10 @@ public interface FeignService {
      * @return
      */
 
-     @RequestMapping(value = "/server/port",method = RequestMethod.GET)
+     @RequestMapping(value = "/serverAction/port",method = RequestMethod.GET)
      String getPort();
 
-     @RequestMapping(value = "/server/getName",method = RequestMethod.GET)
+     @RequestMapping(value = "/serverAction/getName",method = RequestMethod.GET)
      String getName(@RequestParam(value = "name")String name);
 
 

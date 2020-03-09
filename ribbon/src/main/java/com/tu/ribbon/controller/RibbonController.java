@@ -13,6 +13,7 @@ import org.springframework.web.client.RestTemplate;
  * @Created by tuyongjian
  */
 @RestController
+@RequestMapping(value = "RibbonAction")
 public class RibbonController {
 
     @Autowired
@@ -24,6 +25,6 @@ public class RibbonController {
      */
     @RequestMapping(value = "test",method = RequestMethod.GET)
     private String test(){
-        return restTemplate.getForObject("http://Server/server/port",String.class);
+        return restTemplate.getForObject("http://Server/serverAction/port",String.class);
     }
 }

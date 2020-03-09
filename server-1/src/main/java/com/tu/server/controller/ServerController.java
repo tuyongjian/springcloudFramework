@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @Created by tuyongjian
  */
 @RestController
-@RequestMapping(value = "/server")
+@RequestMapping(value = "/serverAction")
 public class ServerController {
 
     @RequestMapping(value = "port",method = RequestMethod.GET)
