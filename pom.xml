@@ -26,6 +26,7 @@
     <module>zuul</module>
     <module>configServer</module>
     <module>configClient</module>
+    <module>gateway</module>
   </modules>
 
 
