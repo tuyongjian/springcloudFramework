@@ -13,7 +13,7 @@
     <artifactId>feign</artifactId>
     <packaging>jar</packaging>
 
-    <name>hystrix</name>
+    <name>fegin</name>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
