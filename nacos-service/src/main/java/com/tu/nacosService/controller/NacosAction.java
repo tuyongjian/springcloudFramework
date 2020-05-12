@@ -1,9 +1,7 @@
 package com.tu.nacosService.controller;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
-import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -16,13 +14,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RefreshScope
 @RestController
 @RequestMapping(value = "nacos")
-
 public class NacosAction {
 
-    @Autowired
-    private ConfigurableApplicationContext context;
-
-    @Value(value = "${test:123}")
+    @Value("${test}")
     private String testProperties;
 
     @GetMapping("/test")
