@@ -27,7 +27,6 @@
     <module>configServer</module>
     <module>configClient</module>
     <module>gateway</module>
-    <module>nacos</module>
   </modules>
 
 
