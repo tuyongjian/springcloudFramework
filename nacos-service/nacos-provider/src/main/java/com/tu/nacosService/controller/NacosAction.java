@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RefreshScope
 @RestController
-@RequestMapping(value = "nacos")
+@RequestMapping(value = "nacosProvider")
 public class NacosAction {
 
     @Value("${test}")
